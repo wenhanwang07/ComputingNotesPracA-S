@@ -1,5 +1,4 @@
-#general python 
-
+#built in data types
 
 Tuple = (a,b) #Immutable (cannot change elements inside) list
 
@@ -40,21 +39,23 @@ List[i:j] #give index i to index (j - 1) [similar to range()]
 List[i:j:k] #give index i to index (j - 1) with step k 
 
 
-#Array 
+#Array (using python list)
 
 array_of_j_integers = [0 for i in range(j)] #change 0 to '' for string
+
+#2d array
 
 2d_array_with_rows_and_columns = [[ “0” for i in range (columns)] for j in range (rows)]  
 
 item_in_2d_array = array[row][column] #floor (row), unit(column)
 
-#Pretty print 2d array:
+#Pretty print:
 
-for row in array: 
+for row in array: #need both for loops for 2d arrays
 
     output = “” 
 
-    for cell in row: 
+    for cell in row: #only need this for loop for 1d array
 
         output += str(cell) + “ “ 
 
